@@ -20,10 +20,10 @@ export default defineComponent({
   },
   setup(props) {
     const title = ref("");
+
     //   回车事件的回调函数，用来添加数据
     const add = () => {
-      console.log("123");
-
+      console.log("按下回车键");
       // 获取文本框中输入的数据，判断不为空
       const text = title.value;
       if (!text.trim()) return;
